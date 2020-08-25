@@ -1,23 +1,24 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
     box-sizing: border-box;
     -webkit-font-smoothing: antialised;    
 }
 
 
 :root {
+    --light-orange: #f1ad42;
     --dark-orange : #f0862f;
     --light-gray : #eaeaea;
     --font-wine : #871307;
     --font-soft-wine : #b33224;
+    --light-blue: #115599
 }
 
-
-
 body {
+    max-width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold; 
 }
 
 header {
@@ -45,6 +46,7 @@ header .topbar {
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     box-shadow: 1px 1px 8px 1px #000;
+    font-weight: bold;
 }
 
 
@@ -99,6 +101,7 @@ header .topbar a#mailLink {
 
 header nav {
     width: 500px;
+    font-weight: bold;
 }
 
 
@@ -135,6 +138,7 @@ header .nav-divider  {
     margin-right: 350px;
     background: #ef2525;
     color: #fff;
+    font-weight: bold;
     padding: 10px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -148,17 +152,168 @@ header .nav-divider  {
     box-shadow: 1px 1px 10px 1px var(--font-soft-wine);
 }
 
-
-section.fullbanner-home {
+section.mainbanner-home {
     background-image: url("../res/images/fullbanner.jpg");
     background-position: center;
     background-size: cover;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100%;
+    position: relative;
+    margin-top: -50px;
+    width: 100%;
+    height: 960px;
 }
 
-.fullbanner {
-    width: 100vw;
+.mainbanner {
+    width: 100%;
+}
+
+section.mainbanner-home .main-container {
+    height: 500px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.center {
+    width: 930px;
+    margin: 0 auto;
+    text-align:center
+}
+
+section.mainbanner-home .main-container .main-carousel-wrapper h1 {
+    font-size: 10em;
+    white-space: nowrap;
+}
+
+section.mainbanner-home .main-container .main-carousel-wrapper h2 {
+    font-size: 8em;
+}
+
+.dark-shadow {
+    box-shadow: 2px 2px 10px 1px #000
+}
+
+.dark-text-shadow {
+    text-shadow: 2px 2px #000
+}
+
+
+.text-white {
+    color: #fff;
+}
+
+
+.elipse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 300px;
+    width: calc(100% - 150px);
+    margin: 0 auto;
+}
+
+.wine-bg {
+    background: var(--font-wine)
+}
+
+.blue-bg {
+    background: var(--light-blue)
+}
+
+section.produtos {
+    width: 100%;
+}
+
+
+section.produtos .section-title h1 {
+    background: linear-gradient( var(--light-orange), var(--light-orange),var(--dark-orange) ) ;
+    text-align: center;
+    background-blend-mode: color-burn;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    font-size: 5em;
+    font-weight: bold;
+    color: #fff;
+    font-style: italic;
+}
+
+
+section.produtos p {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Owl-Config */
+
+
+.owl-stage-outer {
+    max-width: 960px;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 100px;
+    margin: -340px
+}
+
+.owl-nav button {
+    margin-top: -300px!important;
+}
+
+.owl-nav button span {
+    background: #dcdcdc!important;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    border-radius: 50%!important;
+    box-shadow: 1px 1px 10px 1px #000;
+    opacity: .9!important;
+    text-align: center;
+}
+
+.owl-nav button, .owl-nav button:hover  {
+    background: transparent!important;
+    color: #000!important;
+}
+
+
+.owl-dots {
+    position: relative;
+    bottom: -415px;
+}
+
+.owl-dots .active span {
+    border: 2px solid #fff;
+    padding: 10px;
+    background: radial-gradient(red, red ,transparent,transparent)!important
+}
+
+.owl-dots span {
+    border: 2px solid #fff;
+    padding: 10px;
+    background: transparent!important
 }

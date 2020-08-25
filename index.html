@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang=”pt-br”>
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/sao-geraldo-main.css"/>
+
+    <!-- LIBS & PLUGINS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <!---->
+
+
+    <!--Project Styles & Scripts-->
+    <link rel="stylesheet" href="css/sao-geraldo-main.css" />
+    <script src="./scripts/sao-geraldo-main.js"></script>
+    <!--  /// -->
+
+
     <title>Padaria São Geraldo</title>
+
 </head>
+
 <body>
+    <!-- Header  -->
     <header>
+        <!--Barra laranja do topo -->
         <div class="topbar">
             <div class="televendas">
-                    <div class="televendas-icone">
-                        <img src="./res/icons/ICONE TELEVENDAS.png" width="32" height="32" alt="Televendas" title="Televendas">
-                    </div>
+                <div class="televendas-icone">
+                    <img src="./res/icons/ICONE TELEVENDAS.png" width="32" height="32" alt="Televendas"
+                        title="Televendas">
+                </div>
 
-                    <div class="televendas-tel">
-                        <p>Televendas</p>
-                        <p><a id="telLink" href="callto:+55303030"> (30) 3030-3030 </a></p>
-                    </div>    
+                <div class="televendas-tel">
+                    <p>Televendas</p>
+                    <p><a id="telLink" href="callto:+55303030"> (30) 3030-3030 </a></p>
+                </div>
 
             </div>
 
             <div class="logo">
                 <a href="#">
-                    <img  id="logoimg" src="./res/icons/LOGO.png" alt="Padaria São Geraldo" title="Logo" />
-                </a>    
+                    <img id="logoimg" src="./res/icons/LOGO.png" alt="Padaria São Geraldo" title="Logo" />
+                </a>
             </div>
-
-
 
             <div class="texto-email">
                 <img src="./res/icons/ICONE EMAIL.png" height="25" alt="Email" title="Email">
-                <a  id="mailLink" href="mailto:sac@ivascnacks.com.br"> sac@ivascnacks.com.br </a>
+                <a id="mailLink" href="mailto:sac@ivascnacks.com.br"> sac@ivascnacks.com.br </a>
             </div>
         </div>
 
-
+        <!-- Menu do cabeçalho (lado a esquerda da logo) -->
         <div class="nav-divider">
             <nav class="left-menu">
                 <ul>
@@ -56,7 +78,10 @@
                     </li>
                 </ul>
             </nav>
-        
+
+
+
+            <!-- Menu do cabeçalho (lado a direita da logo) -->
             <nav class="right-menu">
                 <ul>
                     <li>
@@ -72,18 +97,101 @@
             </nav>
         </div>
     </header>
-    <a class="float-cadastre">
+
+
+    <!--Botaozinho flutuante "despencado" do cabeçalho -->
+    <a class="float-cadastre text-white">
         Cadastre-se
     </a>
-    
-    <section class="fullbanner-home">
-        <!--img class="fullbanner" src="./res/images/fullbanner.jpg" alt="" srcset=""-->
-
-            <div class="full-carousel-wrapper">
 
 
+    <!-- Banner e carrossel principal---->
+    <section class="mainbanner-home">
+        <!--img class="mainbanner" src="./res/images/mainbanner.jpg" alt="" srcset=""-->
+
+        <div class="center">
+            <div class="main-container ">
+                <div class="main-carousel-wrapper ">
+
+
+                    <div class="owl-carousel owl-theme">
+                        <div>
+                            <div class="item">
+                                <h1 class="text-white dark-text-shadow">
+                                    Pão Francês
+                                </h1>
+
+                                <div class="elipse wine-bg dark-shadow">
+                                    <h2 class="text-white dark-text-shadow">R$13,90</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="item">
+                                <h1 class="text-white dark-text-shadow">
+                                    Pão Doce
+                                </h1>
+
+                                <div class="elipse blue-bg dark-shadow">
+                                    <h2 class="text-white dark-text-shadow">R$18,90</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="item">
+                                <h1 class="text-white dark-text-shadow">
+                                    Pão Francês
+                                </h1>
+
+                                <div class="elipse wine-bg dark-shadow">
+                                    <h2 class="text-white dark-text-shadow">R$13,90</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="item">
+                                <h1 class="text-white dark-text-shadow">
+                                    Pão Francês
+                                </h1>
+
+                                <div class="elipse wine-bg dark-shadow">
+                                    <h2 class="text-white dark-text-shadow">R$13,90</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="item">
+                                <h1 class="text-white dark-text-shadow">
+                                    Pão Doce
+                                </h1>
+                                <div class="elipse blue-bg dark-shadow">
+                                    <h2 class="text-white dark-text-shadow">R$18,90</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
     </section>
 
+    <section class="produtos">
+
+        <div class="section-title">
+            <h1>PRODUTOS</h1>
+        </div>
+
+        <p>
+            Conheça nossos produtos
+        </p>
+
+    </section>
 </body>
+
 </html>
