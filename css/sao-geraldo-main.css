@@ -13,7 +13,11 @@
     --light-gray : #eaeaea;
     --font-wine : #871307;
     --font-soft-wine : #b33224;
-    --light-blue: #115599
+    --light-blue: #115599;
+
+    --soft-green : #c8e7c8;
+    --light-green: #239d4a;
+    --dark-green: #004c18; 
 }
 
 body {
@@ -238,20 +242,122 @@ section.produtos .section-title h1 {
 }
 
 
-section.produtos p {
+section.produtos p.section-subtitle {
     text-align: center;
+    font-size: 1.5em;
+    color: #6d6d6d;
+    font-family: 'Lucida Sans', sans-serif;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.products-container {
+    max-width: 1040px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.products-container .left-side {
+    width: 50%;
+}
+
+
+.products-container .right-side {
+    width: 50%;
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
+.products-container .product-image {
+    max-width: 460px;
+    background: #f7f7f7;
+    padding-left: 4px;
+    padding-right: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-shadow: 1px 1px 16px -5px #000;
+    border-radius: 50px;
+    z-index: 1000;
+    position: relative;
+    }
 
 
+.products-container .product-image img {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.product-weight {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 745px;
+    margin-top: -25px;
+    z-index: 1000;
+    position: relative;
+    /* margin: 0 auto;*/
+    
+}
+
+.product-weight .weight {
+    background: #239d4a;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
+.product-title {
+    color: var(--dark-green);
+    font-weight: bold;
+    font-size: 2.5em;
+}
 
 
+.product-description {
+    padding: 10px;
+    background: var(--soft-green);
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.product-description p{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--dark-green);
+    text-align: center;
+}
 
+a.link-button {
+    width: 200px;
+    background: var(--dark-green);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 13px;
+    border-radius: 10px;
+    font-style: normal;
+    text-decoration: none;
+}
+a.link-button:hover {
+    background: var(--light-green);
+}
 
 
 
