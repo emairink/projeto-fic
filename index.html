@@ -22,11 +22,11 @@
     <!-- LIBS & PLUGINS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+
+    <script src="https://kit.fontawesome.com/406638e776.js" crossorigin="anonymous"></script>
     <!---->
 
 
@@ -211,10 +211,19 @@
         <div class="products-container">
 
             <div class="left-side">
+                <div class="product-images-wrapper owl-carousel">
 
-
-                <div class="product-image ">
-                    <img src="res/images/53-530574_po-de-queijo-vetor-po-de-queijo-png.png" alt="Produto">
+                    <div class="product-image">
+                        <img src="res/images/53-530574_po-de-queijo-vetor-po-de-queijo-png.png" alt="Produto">
+                    </div>
+                    
+                    <div class="product-image">
+                        <img src="res/images/53-531312_pao-de-queijo-pinheiro-preto-hd-png-download.png" alt="Produto">
+                    </div>
+                    
+                    <div class="product-image">
+                        <img src="res/images/53-530574_po-de-queijo-vetor-po-de-queijo-png2.png" alt="Produto">
+                    </div>
                 </div>
 
             </div>
@@ -251,9 +260,25 @@
                 10kg
             </div>
         </div>
-        <div class="bottom-products-session">
+        <div class="bottom-product-session">
             <img src="./res/icons/ARABESCO DIVISÓRIA.png" alt="" srcset="">
         </div>
+
+
+        <div class="popup-chat">
+            <div class="popup-content-wrapper">
+                <div class="popup-header">
+            <img src="./res/icons/ICONE TELEVENDAS.png" width="80" height="auto" alt="" srcset="">
+            <button onclick="fecharPopup()" class="close-popup"> <i class="fas fa-times"></i> </h1>
+        </div>
+            <h1 class="popup-title"> Olá</h1>
+            <p class="popup-content">Caso tenha alguma duvida <br> Estamos à disposição por aqui</p>
+            <button class="link-button open-chat" onclick="abrirChat()"> Iniciar Chat</div>
+        </div>
+
+        </div>
+
+
 
     </section>
 
@@ -263,7 +288,7 @@
         <div class="section-title d-flex jc-center items-center gray-bg">
             <img src="./res/icons/ARABESCO ESQUERDO.png" alt="" srcset="">
             <h1>Confira nossas <br> dicas e novidades</h1>
-            <img src="./res/icons/ARABESCO DIREITO.png" alt="" srcset="">
+            <img src="./res/icons/ARABESCO DIREITO.png">
 
         </div>
 
@@ -276,7 +301,7 @@
             </div>
         
             <div class="recipe-image">
-                <img src="./res/images/IMAGEM BLOG 1.jpg" alt="" srcset="">
+                <img src="./res/images/IMAGEM BLOG 1.jpg">
             </div>
         
 
@@ -292,7 +317,7 @@
             </div>
         
             <div class="recipe-image">
-                <img src="./res/images/IMAGEM BLOG 3.jpg" alt="" srcset="">
+                <img src="./res/images/IMAGEM BLOG 3.jpg">
             </div>
         
 
@@ -308,7 +333,7 @@
             </div>
         
             <div class="recipe-image">
-                <img src="./res/images/IMAGEM BLOG 2.jpg" alt="" srcset="">
+                <img src="./res/images/IMAGEM BLOG 2.jpg">
             </div>
         
 

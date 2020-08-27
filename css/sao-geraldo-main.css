@@ -280,45 +280,46 @@ section.produtos p.section-subtitle {
 
 .products-container .right-side {
     width: 50%;
-    margin-left: -60px;
+    margin-left: -35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.products-container .product-images-wrapper {
+}
 
 
 .products-container .product-image {
     max-width: 460px;
     background: #f7f7f7;
     padding-left: 4px;
-    padding-right: 70px;
     padding-top: 70px;
     padding-bottom: 70px;
     box-shadow: 1px 1px 16px -5px #000;
     border-radius: 50px;
     z-index: 1000;
     position: relative;
+    margin: 0 auto;
     }
 
 
 .products-container .product-image img {
-    width: 450px;
+    width: 390px;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin: 0 auto;
 
 }
 .product-weight {
     display: flex;
     justify-content: flex-end;
-    max-width: 745px;
-    margin-top: -25px;
+    max-width: 780px;
+    margin-top: 25px;
     z-index: 1000;
-    position: relative;
-    /* margin: 0 auto;*/
-    
+    position: relative;    
 }
 
 .product-weight .weight {
@@ -371,15 +372,78 @@ section.produtos p.section-subtitle {
     border-radius: 10px;
     font-style: normal;
     text-decoration: none;
+    cursor: pointer;
 }
 .link-button:hover {
     background: var(--light-green);
 }
 
-.bottom-products-session {
-    text-align: center;
-    margin-top: 100px;
+
+.popup-chat {
+    display: none;
+    position: fixed;
+    opacity: 0;
+    width: 388px;
+    height: 263px;
+    background: url(../res/images/BG\ CHAT.png);
+    right: 0;
+    z-index: 10005;
+    align-items: center;
 }
+
+.popup-header {
+    width: 100%;
+    display: flex;
+}
+
+.popup-header img {
+    margin: 0 auto;
+}
+
+.close-popup {
+    background: var(--bg-red);
+    border-radius: 50%;
+    padding: 10px 10px;
+    width: 35px;
+    height: 35px;
+    margin-left: -35px;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.open-chat {
+    border: none;
+}
+
+
+.popup-content-wrapper {
+    width: 100%;
+    height: 263px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.bottom-product-session {
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+
+
+
+
 
 section.dicas-e-novidades .section-title h1 {
     text-align: center;
@@ -440,6 +504,10 @@ section.dicas-e-novidades .recipe {
     margin: 10px;
 }
 
+.recipe .recipe-link {
+    cursor: pointer;
+}
+
 .recipe .recipe-link a {
     text-align: center;
     text-decoration: none;
@@ -491,61 +559,104 @@ footer .footer-container p {
 
 
 
-
-
-
-/* Owl-Config */
-.owl-stage-outer {
+/* Owl-Config - Carrossel Principal */
+.main-carousel .owl-stage-outer {
     max-width: 960px;
 }
 
-.owl-nav {
+ .owl-nav {
     display: flex;
     justify-content: space-between;
     font-size: 100px;
+    color: #999;
 }
 
-.owl-nav button {
+.main-carousel .owl-nav button {
     margin-top: -300px!important;
 }
 
-.owl-nav .owl-prev {
+.main-carousel .owl-nav .owl-prev {
     margin-left: -150px!important;
 }
-.owl-nav .owl-next {
+.main-carousel .owl-nav .owl-next {
     margin-right: -150px!important;
 }
 
 
-.owl-nav button span {
+.main-carousel .owl-nav button span {
     background: #dcdcdc!important;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 15px;
     border-radius: 50%!important;
-    box-shadow: 1px 1px 10px 1px #000;
-    opacity: .9!important;
+    box-shadow: 1px 1px 10px 1px #999;
     text-align: center;
 }
 
-.owl-nav button, .owl-nav button:hover  {
+.main-carousel .owl-nav button,.main-carousel .owl-nav button:hover  {
     background: transparent!important;
     color: #000!important;
 }
 
-.owl-dots {
+.main-carousel .owl-dots {
     position: relative;
     bottom: -115px;
 }
 
-.owl-dots .active span {
+.main-carousel .owl-dots .active span {
     border: 2px solid #fff;
     padding: 10px;
     background: radial-gradient(red, red ,transparent,transparent)!important
 }
 
-.owl-dots span {
+.main-carousel .owl-dots span {
     border: 2px solid #fff;
     padding: 10px;
     background: transparent!important
+}
+
+/* Carrossel Produtos */
+
+
+.products-container .owl-nav {
+    margin-top: -250px;
+    font-size: 3.4em;
+    color: #999;    
+}
+
+
+.products-container .owl-nav button {
+    background: #dcdcdc!important;
+    box-shadow: 1px 1px 10px 1px #999;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 9;
+}
+
+.products-container .owl-nav button span {
+    padding-left: 27px;
+    padding-right: 19px;
+
+    
+}
+
+
+.products-container .owl-nav .owl-prev {
+}
+
+.products-container .owl-nav .owl-next {
+    z-index: 9;
+}
+
+.products-container .owl-nav .disabled {
+    opacity: 0.5;
+}
+
+
+
+.products-container .owl-item {
+    max-height: 450px!important;
+    min-height: 400px!important;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
