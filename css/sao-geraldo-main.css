@@ -287,8 +287,6 @@ section.produtos p.section-subtitle {
     align-items: center;
 }
 
-.products-container .product-images-wrapper {
-}
 
 
 .products-container .product-image {
@@ -632,8 +630,6 @@ footer .footer-container p {
 }
 
 
-.products-container .owl-nav .owl-prev {
-}
 
 .products-container .owl-nav .owl-next {
     z-index: 9;
