@@ -4,7 +4,6 @@
     outline: none;
     box-sizing: border-box;
     -webkit-font-smoothing: antialised;
-    max-width: 100%;
 }
 
 :root {
@@ -433,7 +432,7 @@ img#imgPimentinha {
     height: 263px;
     background: url(../res/images/BG\ CHAT.png);
     right: 0;
-    z-index: 10005;
+    z-index: 9999999999;
     align-items: center;
 }
 
@@ -444,7 +443,7 @@ img#imgPimentinha {
     width: 50px;
     height: 50px;
     right: 0;
-    z-index: 10005;
+    z-index: 999999999999999;
     align-items: center;
 }
 .mobile-popup-chat button {
@@ -452,8 +451,6 @@ img#imgPimentinha {
     border-radius: 50%;
     background: var(--light-orange);
     color: #fff;
-    z-index: 999999999999999;
-    position: fixed;
 }
 
 
@@ -503,6 +500,11 @@ img#imgPimentinha {
     text-align: center;
     margin-top: 150px;
 }
+
+.bottom-product-session img {
+    width: 100%;
+}
+
 
 section.dicas-e-novidades .section-title h1 {
     text-align: center;
@@ -861,11 +863,6 @@ footer .footer-container p {
     .recipes-container .owl-nav .owl-next{
         margin-right: 20px!important;
     }
-
-    .bottom-product-session img {
-        width: 100%;
-    }
-
 }
 
 @media screen and (max-width: 1050px) {
@@ -1001,4 +998,12 @@ footer .footer-container p {
         }
 
 
+    }
+
+
+    @media screen and (max-width: 1000px) and (min-width: 768px) {
+        .product-weight {
+            max-width: 100%;
+            justify-content: center;
+        }
     }
