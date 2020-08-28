@@ -236,6 +236,10 @@ section.mainbanner-home .main-container {
     vertical-align: middle;
 }
 
+.main-carousel-wrapper {
+    margin-top: 200px
+}
+
 .center {
     width: 930px;
     margin: 0 auto;
@@ -502,7 +506,7 @@ img#imgPimentinha {
 }
 
 .bottom-product-session img {
-    width: 100%;
+    width: 320px;
 }
 
 
