@@ -4,6 +4,8 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!-- Google Analytics-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,9 +16,6 @@
     gtag('js', new Date());
     gtag('config', 'UA-176397356-1');
     </script>
-
-
-
 
 
     <!-- LIBS & PLUGINS -->
@@ -35,18 +34,18 @@
     <script src="./scripts/sao-geraldo-main.js"></script>
     <!--  /// -->
 
+    <link rel="shortcut icon" href="./res/icons/favicon.ico" type="image/x-icon">
 
-    <title>Padaria São Geraldo</title>
-
-
-
+    <title>Padaria São Geraldo - Uma empresa fictícia!</title>  
+    <meta name="description" content= "Site de empresa fictícia para demonstrar habilidades como Web Developer" />
+    <meta name="robots" content= "index, follow">
 
 
 </head>
 
 <body>
     <!-- Header  -->
-    <header>
+    <header class="desktop">
         <!--Barra laranja do topo -->
         <div class="topbar">
             <div class="televendas">
@@ -115,6 +114,46 @@
         </div>
     </header>
 
+    <header class="mobile">
+    <div class="mobile-topbar">
+        <div class="mobile-trigger">
+            <i class="fas fa-bars" style="font-size: 24px;"></i>
+        </div>    
+        
+        <div class="left-topbar">
+                <img src="./res/icons/ICONE TELEVENDAS.png" alt="" srcset="" width="25" height="22">
+                <a href="">(30) 3030-3030</a>
+            </div>
+            <div class="right-topbar">
+                <img src="./res/icons/ICONE EMAIL.png" width="25" height="22">
+                <a href="">sac@ivasnacks.com</sac@ivasnacks></a>
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+           
+            <div class="background-menu"></div>
+            <ul class="mobile-menu-list" >
+                <div class="mobile-menu-header" >
+                   <img src="./res/icons/LOGO.png" width="252" height="152">
+                    <button class="mobile-menu-close" style="border: none; background: none; float: right;">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+
+
+                <li> <a href=""> Home </a></li>
+                <li> <a href=""> Quem Somos </a></li>
+                <li> <a href=""> Produtos </a></li>
+                <li> <a href=""> Dicas & Novidades </a></li>
+                <li> <a href=""> Fale Conosco </a></li>
+            </ul>
+
+
+        </div>
+
+
+    </header>
 
     <!--Botaozinho flutuante "despencado" do cabeçalho -->
     <a class="float-cadastre text-white">
@@ -129,8 +168,6 @@
         <div class="center">
             <div class="main-container ">
                 <div class="main-carousel-wrapper ">
-
-
                     <div class="main-carousel owl-carousel owl-theme">
                         <div>
                             <div class="item">
@@ -193,6 +230,78 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- MOBILE CAROUSEL -->
+                    <div class="mobile-carousel-wrapper" style="width: 100%; display: flex; justify-content: center;">
+                    <div class="mobile-carousel owl-carousel owl-theme">
+                        <div>
+                            <div class="mobile-item">
+                                <h1 class="mobile-text-white dark-text-shadow">
+                                    Pão Francês
+                                </h1>
+
+                                <div class="mobile-elipse wine-bg dark-shadow">
+                                    <h2 class="mobile-text-white dark-text-shadow">R$13,90</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="mobile-item">
+                                <h1 class="mobile-text-white dark-text-shadow">
+                                    Pão Doce
+                                </h1>
+
+                                <div class="mobile-elipse blue-bg dark-shadow">
+                                    <h2 class="mobile-text-white dark-text-shadow">R$18,90</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="mobile-item">
+                                <h1 class="mobile-text-white dark-text-shadow">
+                                    Pão Francês
+                                </h1>
+
+                                <div class="mobile-elipse wine-bg dark-shadow">
+                                    <h2 class="mobile-text-white dark-text-shadow">R$13,90</h2>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="mobile-item">
+                                <h1 class="mobile-text-white dark-text-shadow">
+                                    Pão Francês
+                                </h1>
+
+                                <div class="mobile-elipse wine-bg dark-shadow">
+                                    <h2 class="mobile-text-white dark-text-shadow">R$13,90</h2>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="mobile-item">
+                                <h1 class="mobile-text-white dark-text-shadow">
+                                    Pão Doce
+                                </h1>
+                                <div class="mobile-elipse blue-bg dark-shadow">
+                                    <h2 class="mobile-text-white dark-text-shadow">R$18,90</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
@@ -240,14 +349,12 @@
                         metus mollis dui euismod, et tincidunt felis egestas.
                     </p>
                     <a class="link-button" href="">Ver Mais</a>
-                    <img src="./res/icons/ZE PIMENTINHA.png"
-                        style="position: absolute; margin-left: -200px; margin-top: 160px; z-index: 1001;">
+                    <img id="imgPimentinha" src="./res/icons/ZE PIMENTINHA.png"
+                        style="">
 
                 </div>
             </div>
         </div>
-
-
 
         <div class="product-weight">
             <div class="weight">
@@ -269,17 +376,24 @@
             <div class="popup-content-wrapper">
                 <div class="popup-header">
             <img src="./res/icons/ICONE TELEVENDAS.png" width="80" height="auto" alt="" srcset="">
-            <button onclick="fecharPopup()" class="close-popup"> <i class="fas fa-times"></i> </h1>
+            <button  class="close-popup" onclick="fecharPopup()"> <i class="fas fa-times"></i> </h1>
         </div>
             <h1 class="popup-title"> Olá</h1>
             <p class="popup-content">Caso tenha alguma duvida <br> Estamos à disposição por aqui</p>
             <button class="link-button open-chat" onclick="abrirChat()"> Iniciar Chat</div>
         </div>
 
+        <div class="mobile-popup-chat">
+            <div class="popup-content-wrapper">
+                    <button class="open-chat" onclick="abrirChat()">
+                    <i class="fas fa-comment"></i>
+                    </button>
+                    </div>
         </div>
 
 
 
+        </div>
     </section>
 
 
@@ -291,10 +405,8 @@
             <img src="./res/icons/ARABESCO DIREITO.png">
 
         </div>
-
-
     <div class="recipes-container flex jc-center">
-        <div class="recipes-wrapper">
+        <div class="recipes-wrapper owl-carousel">
         <div class="recipe">
             <div class="recipe-title">
                 Como preparar um excelente petisco
@@ -351,7 +463,7 @@
         <img src="./res/icons/LOGO.png" alt="LOGO"/>
     
         <div class="footer-info">
-            <p>Av. Acaraí n° 1356, bairro Jardim Perola, Belo Horizonte - MG</p>
+            <p>Av. Acaraí n° 1356, bairro Jardim Perola,<br> Belo Horizonte - MG</p>
             <p>Telefone: (30) 3030-3030</p>
             <p>sac@ivasnacks.com.br</p>
         </div>
